@@ -1,1 +1,40 @@
+/* --- Base mínima para que todo se vea ordenado --- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* Contenedor y layout */
+.container { width: min(100%, 1100px); margin: 0 auto; padding: 0 16px; }
+
+/* Top nav */
+.nav { position: sticky; top: 0; background: #0f172a; color: #fff; border-bottom: 1px solid #0b1226; }
+.nav .wrap { display:flex; align-items:center; justify-content:space-between; padding: 12px 0; }
+.nav .brand { color:#fff; text-decoration:none; font-weight:700; letter-spacing:.5px; }
+.nav .btn { color:#cbd5e1; text-decoration:none; margin-left:12px; padding:6px 10px; border-radius:8px; }
+.nav .btn:hover { background:#1e293b; color:#fff; }
+
+/* Hero / encabezado */
+.hero { background: #f8fafc; padding: 36px 0; border-bottom:1px solid #e2e8f0; }
+.hero h1 { margin:0 0 6px; font-size: clamp(24px, 3.2vw, 36px); }
+.hero p { margin:0; color:#475569; }
+
+/* Secciones y tarjetas (clientes/portafolio) */
+.section { padding: 28px 0; }
+.section h2 { margin:0 0 16px; font-size: clamp(20px, 2.4vw, 28px); }
+.grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.item { border:1px solid #e5e7eb; border-radius:14px; padding:16px; background:#fff; }
+.item h3 { margin:0 0 8px; font-size:18px; }
+.item p { margin:0; color:#475569; }
+.badge { display:inline-block; padding:4px 10px; border:1px solid #cbd5e1; border-radius:999px; font-size:.85rem; color:#334155; margin-bottom:10px; background:#f1f5f9; }
+
+/* Imágenes responsivas */
+img { max-width:100%; height:auto; display:block; border-radius:10px; }
+
+/* Footer */
+.footer { padding:20px 0; border-top:1px solid #e2e8f0; color:#475569; background:#fafafa; }
 
