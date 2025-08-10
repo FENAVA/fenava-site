@@ -1,0 +1,1 @@
+function wa(){window.open('https://wa.me/56981530219?text=Hola%20FENAVA%2C%20necesito%20asesor%C3%ADa','_blank');}
